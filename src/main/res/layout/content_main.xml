@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.chayan_pc.youtube_player.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/btnPlaySingle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnStandalone"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnStandalone"
+
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Play Favorite"
+        android:textColor="@color/colorPrimary"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnStandalone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnPlaySingle"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Play Your Favorite List"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>
